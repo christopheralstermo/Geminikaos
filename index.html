@@ -1,0 +1,28 @@
+<html lang=en>
+<head>
+<meta charset=utf-8>
+    <title>Self Made Gravity</title>
+    <style>
+        body {
+            margin: 3;
+        }
+        canvas {
+            background-color: aqua;
+            border-left: solid 5px;
+            border-bottom: solid 5px;
+            border-right: solid 5px;
+        }
+    </style>
+    </head>
+    <body onload="init()">
+
+        <canvas></canvas>
+        <input onchange="speed(this.value)" type="number" placeholder="Velocity = 0" style="width: 170px; height: 35px; font-size: 23px;">
+        <input onchange="angle(this.value)" type="number" placeholder="Angle = 0" style="width: 150px; height: 35px; font-size: 23px;">
+        <input onchange="gravityn(this.value)" type="number" placeholder="Gravity = 7" style="width: 150px; height: 35px; font-size: 23px;">
+        <input onchange="spretten(this.value)" type="number" placeholder="Bounce = 3" style="width: 150px; height: 35px; font-size: 23px;">
+        <button style="width: 150px; height: 35px; font-size: 23px;" onclick="init()">Launch</button>
+ 
+<script src="main_try2.js"></script>
+    </body>
+</html>
